@@ -65,7 +65,6 @@ public class BetterReader extends BufferedReader {
     }
 
     /**
-     *
      * @return Returns the last line read
      */
     public String getLine() {
@@ -73,7 +72,6 @@ public class BetterReader extends BufferedReader {
     }
 
     /**
-     *
      * @return Current line number
      */
     public int getLineNo() {
