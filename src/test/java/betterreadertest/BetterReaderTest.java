@@ -12,8 +12,7 @@ public class BetterReaderTest {
     @Test
     public void readerTest() {
         try {
-            File file = new File("src/test/resources/test.txt");
-            BetterReader reader = new BetterReader(file);
+            final BetterReader reader = new BetterReader(new File("src/test/resources/test.txt"));
             assertTrue("hasNext-true", reader.hasNext());
             assertTrue("getLine", reader.getLine().startsWith("Lorem ipsum"));
             assertEquals("getLineNo", 1, reader.getLineNo());
