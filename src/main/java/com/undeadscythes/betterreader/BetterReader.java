@@ -18,8 +18,6 @@ public class BetterReader extends BufferedReader {
 
     /**
      * Wrap a standard {@link Reader}.
-     *
-     * @param reader
      */
     public BetterReader(final Reader reader) {
         super(reader);
@@ -28,8 +26,6 @@ public class BetterReader extends BufferedReader {
 
     /**
      * Wrap an {@link InputStream}.
-     *
-     * @param input
      */
     public BetterReader(final InputStream input) {
         this(new InputStreamReader(input));
@@ -37,9 +33,6 @@ public class BetterReader extends BufferedReader {
 
     /**
      * Wrap a {@link File}.
-     *
-     * @param file
-     * @throws FileNotFoundException
      */
     public BetterReader(final File file) throws FileNotFoundException {
         this(new FileReader(file));
@@ -51,7 +44,7 @@ public class BetterReader extends BufferedReader {
      * {@link BetterReader#getLine}, calling this method twice will ignore the
      * first line read.
      *
-     * @return True if there was another line to be read
+     * @return False if there was no line to be read
      */
     public boolean hasNext() {
         try {
@@ -65,14 +58,15 @@ public class BetterReader extends BufferedReader {
     }
 
     /**
-     * @return Returns the last line read
+     * Get the last line that was read with {@link #hasNext}.
      */
     public String getLine() {
         return line;
     }
 
     /**
-     * @return Current line number
+     * Get the current line number. This is the number of the line that was last
+     * read with {@link #hasNext}.
      */
     public int getLineNo() {
         return lineNo;
