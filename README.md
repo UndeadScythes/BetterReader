@@ -1,4 +1,4 @@
-# BetterReader - Alpha-2.1-SNAPSHOT #
+# BetterReader - Alpha-2.1 #
 
 Born from my own obsessive compulsive need for tidy code comes
 BetterReader. A wrapper class for BufferedReaders that offers a nice way to
