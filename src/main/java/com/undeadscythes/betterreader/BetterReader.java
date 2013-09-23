@@ -2,7 +2,6 @@ package com.undeadscythes.betterreader;
 
 import java.io.*;
 import java.util.logging.*;
-import static java.util.logging.Logger.*;
 
 /**
  * Just one little class to make the business of reading from files a little
@@ -11,7 +10,7 @@ import static java.util.logging.Logger.*;
  * @author UndeadScythes
  */
 public class BetterReader extends BufferedReader {
-    private static final Logger LOGGER = getLogger(BetterReader.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(BetterReader.class.getName());
 
     private String line;
     private int lineNo;
