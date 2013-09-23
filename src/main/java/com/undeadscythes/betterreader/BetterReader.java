@@ -31,10 +31,24 @@ public class BetterReader extends BufferedReader {
     }
 
     /**
+     * Wrap an {@link InputStream} that has a given encoding.
+     */
+    public BetterReader(final InputStream input, final String encoding) throws UnsupportedEncodingException {
+        this(new InputStreamReader(input, encoding));
+    }
+
+    /**
      * Wrap a {@link File}.
      */
     public BetterReader(final File file) throws FileNotFoundException {
         this(new FileReader(file));
+    }
+
+    /**
+     * Wrap a {@link File file} that has a given encoding.
+     */
+    public BetterReader(final File file, final String encoding) throws FileNotFoundException, UnsupportedEncodingException {
+        this(new FileInputStream(file), encoding);
     }
 
     /**
