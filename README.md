@@ -1,4 +1,4 @@
-# BetterReader - Alpha-2.1.1 #
+# BetterReader - Beta-1.0 #
 
 Born from my own obsessive compulsive need for tidy code comes
 BetterReader. A wrapper class for BufferedReaders that offers a nice way to
@@ -39,4 +39,4 @@ BetterReader source code is released under the CC BY-NC-SA 2.0 UK license.
 A copy of this licence is located in the file named LICENCE.lic, if this file is
 not present the text can be found [here](http://creativecommons.org/licenses/by-nc-sa/2.0/uk/legalcode).
 
-Last edited on 2013-09-24.
+Last edited on 2013-10-04.
